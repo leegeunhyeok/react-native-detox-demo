@@ -8,7 +8,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "pod:install": "cd ios && USE_FABRIC=1 RCT_NEW_ARCH_ENABLED=1 pod install"
+    "pod:install": "cd ios && USE_FABRIC=0 RCT_NEW_ARCH_ENABLED=0 pod install"
   },
   "dependencies": {
     "react": "18.1.0",
