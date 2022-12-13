@@ -17,6 +17,17 @@ detox init
 ## Testing
 
 ```bash
+# Fabric enabled + Flipper enabled
+git checkout fabric-enabled && yarn cleanup && yarn pod:install
+
+# Fabric enabled + Flipper disabled
+git checkout fabric-enabled-without-flipper && yarn cleanup && yarn pod:install
+
+# Fabric disabled
+git checkout fabric-disabled && yarn cleanup && yarn pod:install
+```
+
+```bash
 # iOS
 detox build --configuration ios.sim.debug
 detox test --configuration ios.sim.debug
